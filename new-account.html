@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create PopX Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="containerOne">
+        <div class="heading">
+            <h2>Create your PopX account</h2>
+        </div>
+        <div class="input-group">
+            <input type="text" required>
+            <label for="">Full Name<span class="agency-text">*</span></label>
+        </div>
+        <div class="input-group">
+            <input type="text" required>
+            <label for="">Phone number<span class="agency-text">*</span></label>
+        </div>    
+        <div class="input-group">
+            <input type="text" required>
+            <label for="">Email address<span class="agency-text">*</span></label>
+        </div>  
+        <div class="input-group">
+            <input type="text" required>
+            <label for="">Password<span class="agency-text">*</span></label>
+        </div>  
+        <div class="input-group">
+            <input type="text">
+            <label for="">Company name</label>
+        </div>  
+        <p>Are you an Agency?<span class="agency-text">*</span></p>
+        <div class="toggle-buttons">
+            <input type="radio" name="agency" id="yes" value="yes" checked><label for="yes">Yes</label>
+            <input type="radio" name="agency" id="no" value="no"><label for="no">No</label>
+        </div>
+        <button class="create-account-button" id="show-account">Create Account</button>
+    </div>
+
+    <script>
+        // Get the button element by its ID
+        const show = document.getElementById('show-account');
+    
+        // Add a click event listener to the button
+        show.addEventListener('click', function() {
+            // Redirect to the login.html file
+            window.location.href = 'user.html';
+        });
+    </script>
+</body>
+</html>

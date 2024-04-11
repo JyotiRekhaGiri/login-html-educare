@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="login">
+
+        <h2 style="margin-bottom: 0.2em; font-family: Arial, Helvetica, sans-serif;">Welcome to PopX</h2>
+        <p style="margin-bottom: 0.5rem; color: #9a9797;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+        <div class="buttons">
+            <button class="btn1" id="createAccountBtn">Create Account</button>
+            <button class="btn2" id="loginBtn">Already Registered? Login</button>
+        </div>
+    </div>
+
+    <script>
+        // Get the button element by its ID
+        const createAccountBtn = document.getElementById('createAccountBtn');
+    
+        // Add a click event listener to the button
+        createAccountBtn.addEventListener('click', function() {
+            // Redirect to the new-account.html file
+            window.location.href = 'new-account.html';
+        });
+
+        // Get the button element by its ID
+        const loginBtn = document.getElementById('loginBtn');
+    
+        // Add a click event listener to the button
+        loginBtn.addEventListener('click', function() {
+            // Redirect to the login.html file
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+
+</html>
